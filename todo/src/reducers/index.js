@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
-import Todos from './todos';
-import ActiveTodo from './active-todo';
+import todosReducer from './todos';
 
-const allReducers = combineReducers({
-  todos: Todos,
-  activeTodo: ActiveTodo
+const rootReducer = combineReducers({
+  todos: todosReducer
 });
 
-export default allReducers;
+export default rootReducer;
